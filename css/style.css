@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  transition: opacity 5.8s cubic-bezier(.25,.1,.25,1);
+  opacity: 0;
+}
+
+body {
+  margin: 0;
+}
+
+html.page-active {
+  opacity: 1;
+}
+
+.main {
+  height: 100vh;
+  background-image: url('../image/image1.png');
+  background-position: center center;
+  background-size: cover;
+}
+
+.page-active header {
+  opacity: 1;
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transition: opacity .8s;
+  transition-delay: 2.8s;
+  opacity: 0;
+  color: #fff;
+}
+
+.main-txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.page-active .main-txt h2 {
+  opacity: 1;
+}
+
+.main-txt h2 {
+  writing-mode: vertical-rl;
+  line-height: 1.5em;
+  transition: opacity .8s;
+  transition-delay: 1s;
+  letter-spacing: .08em;
+  opacity: 0;
+  color: #fff;
+}
+
+.page-active .main-txt ul {
+  opacity: 1;
+}
+
+.main-txt ul {
+  transition: opacity .8s;
+  transition-delay: 1.8s;
+  opacity: 0;
+  color: #fff;
+}
+
+.main-middle {
+  max-width: 800px;
+  margin: 80px auto;
+}
+
+.main-middle h3 {
+  font-size: 24px;
+  line-height: 2em;
+  margin-bottom: 40px;
+}
+
+.main-middle p {
+  line-height: 1.8em;
+  margin-bottom: 40px;
+}
+
+
+.main-bottom {
+  background: #ecf2e7;
+}
+
+.main-bottom__wrapper {
+  max-width: 810px;
+  margin: 0 auto;
+  padding-bottom: 66px;
+}
+
+.main-bottom__title {
+  will-change: transform,opacity;
+  font-size: 24px;
+  overflow: hidden;
+  margin-bottom: 80px;
+  padding-top: 50px;
+  transition: transform .8s cubic-bezier(.33,1,.68,1),opacity 2.2s linear;
+  text-align: center;
+  opacity: 0;
+}
+
+.main-bottom__sub-wrapper {
+  display: flex;
+  justify-content: space-between;
+  transition: transform .8s cubic-bezier(.33,1,.68,1),opacity 2.2s linear;
+  opacity: 0;
+}
+
+.main-bottom__image {
+  width: 164px;
+}
+
+.main-bottom__image--title {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.main-bottom__wrapper.active .main-bottom__title{
+    opacity: 1;
+}
+
+.main-bottom__wrapper.active .main-bottom__sub-wrapper{
+    opacity: 1;
+}
