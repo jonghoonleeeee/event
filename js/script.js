@@ -4,11 +4,14 @@ $(function(){
 
 $(window).scroll(function() {
   jsMainBottom = $('.js-main-bottom');
-  jsMainBottomExpr = $('.js-main-bottom')[0];
 
+  //スクロール量の取得
   scrollPoint = $(window).scrollTop();
+  //画像エリアの位置を取得
   jsMainBottomScrollTopPoint = jsMainBottom.offset().top;
-  mainTxtHeight = $('.js-main-txt')[0].clientHeight;
+  //windowの高さの取得
+  mainTxtHeight = $(window).height();
+  //画像エリアのが表示されるスクロール量の計算
   scrollEventPoint = jsMainBottomScrollTopPoint - mainTxtHeight;
 
   if (scrollPoint >= scrollEventPoint) {
