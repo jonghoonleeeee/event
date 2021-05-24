@@ -1,24 +1,21 @@
-window.addEventListener('DOMContentLoaded', function() {
-  setTimeout(function() {
-    var html = document.getElementsByTagName('html');
-    html[0].classList.add('page-active');
-  }, 1000);
+$(function(){
+  //なにかしらの処理
+  $('html').addClass('page-active');
 });
 
-const scFunc = function() {
-  var targetElement = document.getElementsByClassName('js-main-bottom')[0];
+$(window).scroll(function() {
+  var targetElement = $('.js-main-bottom')[0];
+
   var jsMainBottomTop = targetElement.getBoundingClientRect().top;
   var scrollPoint = window.pageYOffset;
   var jsMainBottomScrollTopPoint = scrollPoint + jsMainBottomTop;
-  var mainTxtHeight = document.getElementsByClassName('js-main-txt')[0].clientHeight;
+  var mainTxtHeight = $('.js-main-txt')[0].clientHeight;
 
   var scrollEventPoint = jsMainBottomScrollTopPoint - mainTxtHeight;
 
   if (scrollPoint >= scrollEventPoint) {
-    targetElement.classList.add('active');
+    $('.js-main-bottom').addClass('active');
   } else {
-    targetElement.classList.remove('active');
+    $('.js-main-bottom').removeClass('active');
   }
-}
-
-window.addEventListener('scroll', scFunc);
+});
