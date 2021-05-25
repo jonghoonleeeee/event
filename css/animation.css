@@ -1,7 +1,7 @@
 /*transition: opacityでopacity要素のみ定義する*/
 body {
+  transition: 5s;
   opacity: 0;
-  transition: 5s cubic-bezier(.25,.1,.25,1);
 }
 
 body.page-active {
@@ -9,9 +9,9 @@ body.page-active {
 }
 
 .top__copy {
-  opacity: 0;
   transition: .8s;
   transition-delay: 1s;
+  opacity: 0;
 }
 
 .page-active .top__copy {
@@ -19,9 +19,9 @@ body.page-active {
 }
 
 .top__list {
-  opacity: 0;
   transition: .8s;
   transition-delay: 1.8s;
+  opacity: 0;
 }
 
 .page-active .top__list {
@@ -29,9 +29,9 @@ body.page-active {
 }
 
 header {
-  opacity: 0;
   transition: .8s;
   transition-delay: 2.8s;
+  opacity: 0;
 }
 
 .page-active header {
@@ -40,8 +40,8 @@ header {
 
 .middle {
   padding-top: 40px;
-  opacity: 0;
   transition: .8s;
+  opacity: 0;
 }
 
 .middle.active {
@@ -50,8 +50,8 @@ header {
 }
 
 .bottom__wrapper {
-  opacity: 0;
   transition: .8s;
+  opacity: 0;
 }
 
 .bottom__wrapper.active {
