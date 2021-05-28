@@ -10,7 +10,8 @@ CSSでアニメーションを作り、jQueryを使い任意のタイミング�
 を対象をしております。HTMLやCSSの基本的な知識はある前提ですのでご了承ください。
 
 ## 環境
-HTML、CSS、javascriptの記述、htmlファイルの閲覧ができればPC、ブラウザ、エディタは問いません。
+HTML、CSS、javascriptの記述、htmlファイルの閲覧ができればPC、エディタは問いません。
+ブラウザはSafari,Chrome、Edge推奨です。
 登壇者はMac、Chrome、sumlime textで行います。
 
 ## 1. 表示の確認
