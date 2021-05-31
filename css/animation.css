@@ -8,23 +8,23 @@ body.page-active {
   opacity: 1;
 }
 
-.top__copy {
+.top_copy {
   transition: .8s;
   transition-delay: 1s;
   opacity: 0;
 }
 
-.page-active .top__copy {
+.page-active .top_copy {
   opacity: 1;
 }
 
-.top__list {
+.top_list {
   transition: .8s;
   transition-delay: 1.8s;
   opacity: 0;
 }
 
-.page-active .top__list {
+.page-active .top_list {
   opacity: 1;
 }
 
@@ -49,11 +49,11 @@ header {
   opacity: 1;
 }
 
-.bottom__wrapper {
+.bottom_wrapper {
   transition: .8s;
   opacity: 0;
 }
 
-.bottom__wrapper.active {
+.bottom_wrapper.active {
   opacity: 1;
 }

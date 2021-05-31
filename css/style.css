@@ -25,7 +25,7 @@ header {
   background-size: cover;
 }
 
-.top__txt {
+.top_txt {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,14 +34,14 @@ header {
   margin: 0 auto;
 }
 
-.top__copy {
+.top_copy {
   writing-mode: vertical-rl;
   line-height: 1.5em;
   letter-spacing: .08em;
   color: #fff;
 }
 
-.top__list {
+.top_list {
   color: #fff;
 }
 
@@ -65,13 +65,13 @@ header {
   background: #ecf2e7;
 }
 
-.bottom__wrapper {
+.bottom_wrapper {
   max-width: 810px;
   margin: 0 auto;
   padding-bottom: 66px;
 }
 
-.bottom__title {
+.bottom_title {
   font-size: 24px;
   overflow: hidden;
   margin-bottom: 80px;
@@ -79,16 +79,16 @@ header {
   text-align: center;
 }
 
-.bottom__sub-wrapper {
+.bottom_sub-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.bottom__image {
+.bottom_image {
   width: 164px;
 }
 
-.bottom__image--title {
+.bottom_image-title {
   margin-top: 36px;
   text-align: center;
 }
