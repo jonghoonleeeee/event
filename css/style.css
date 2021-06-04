@@ -29,7 +29,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1000px;
+  width: 80vw;
+  max-width: 1000px;
   height: 100%;
   margin: 0 auto;
 }
@@ -48,6 +49,7 @@ header {
 .middle {
   max-width: 800px;
   margin: 80px auto;
+  padding: 0 16px;
 }
 
 .middle h3 {
@@ -68,6 +70,7 @@ header {
 .bottom_wrapper {
   max-width: 810px;
   margin: 0 auto;
+  padding: 0 16px;
   padding-bottom: 66px;
 }
 
@@ -88,7 +91,7 @@ header {
   width: 164px;
 }
 
-.bottom_image-title {
+.bottom_image--title {
   margin-top: 36px;
   text-align: center;
 }

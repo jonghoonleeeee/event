@@ -10,16 +10,16 @@ $(window).scroll(function() {
 
   //中央エリアの表示
   if(scrollPoint >= 300) {
-    $(".js-middle").addClass('active')
+    $(".middle").addClass('active')
   }
   //画像エリアの位置を取得
-  bottomTop = $('.js-bottom').offset().top;
+  bottomTop = $('.bottom').offset().top;
   //windowの高さの取得
   mainTxtHeight = $(window).height();
   //画像エリアのが表示されるスクロール量の計算
   scrollEventPoint = bottomTop - mainTxtHeight + 200;
 
   if (scrollPoint >= scrollEventPoint) {
-    $('.js-bottom').addClass('active');
+    $('.bottom_wrapper').addClass('active');
   }
 });
