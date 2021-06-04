@@ -1,0 +1,59 @@
+/*transition: opacityでopacity要素のみ定義する*/
+body {
+  transition: 5s;
+  opacity: 0;
+}
+
+body.page-active {
+  opacity: 1;
+}
+
+.top_copy {
+  transition: .8s;
+  transition-delay: 1s;
+  opacity: 0;
+}
+
+.page-active .top_copy {
+  opacity: 1;
+}
+
+.top_list {
+  transition: .8s;
+  transition-delay: 1.8s;
+  opacity: 0;
+}
+
+.page-active .top_list {
+  opacity: 1;
+}
+
+header {
+  transition: .8s;
+  transition-delay: 2.8s;
+  opacity: 0;
+}
+
+.page-active header {
+  opacity: 1;
+}
+
+.middle {
+  padding-top: 40px;
+  transition: .8s;
+  opacity: 0;
+}
+
+.middle.active {
+  padding-top: 0;
+  opacity: 1;
+}
+
+.bottom_wrapper {
+  transition: .8s;
+  opacity: 0;
+}
+
+.bottom_wrapper.active {
+  opacity: 1;
+}
